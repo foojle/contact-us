@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<title>Page title</title>
+		<style>
+				*{
+						margin:0px;
+						padding: 0px;
+				}
+				.header{
+						position: absolute;
+						top:100px;
+						left: 18%;
+						display: inline;
+				}
+				form{
+						display: inline-block;
+				}
+				input, textarea, button	{
+						margin-top: 10px;
+				}
+		</style>
+</head>
+<body>
+		<div class="header">
+			<form action="form-hndler.php" method="post">
+					<input type="text" name="name" placeholder="Name" required><br>
+					<input type="email" name="email" placeholder="Enter your email" required><br>
+					<input type="text" name="subject" placeholder="Entee your subject" required><br>
+					<textarea rows="8" name="message" placeholder="Your messege" required></textarea><br>
+					<button type="submit">Send message</button>
+			</form>
+		</div>
+</body>
+</html>
